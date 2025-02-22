@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Main Title */
+h1.bg-danger {
+    background-color: #ffcc00 !important; /* Yellow */
+    color: black !important;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffcc00; /* Yellow border */
+    border-radius: 5px;
+    background-color: #222; /* Dark input background */
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    margin: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Button Colors */
+.btn-success {
+    background-color: #ffcc00 !important; /* Yellow */
+    border: none;
+    color: black !important;
+}
+
+.btn-success:hover {
+    background-color: #e6b800 !important; /* Slightly darker yellow */
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #222; /* Dark background */
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.table thead {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Table Rows */
+.table tbody tr {
+    border-bottom: 1px solid #ffcc00;
+}
+
+.table tbody tr:hover {
+    background-color: #333; /* Slightly lighter on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 100%;
+    }
+}
+/* Table Container */
+.table-container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 400px; /* Set a max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Scrollable Table */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Fixed Table Header */
+.table-container thead {
+    background-color: #ffcc00;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Table Body Styling */
+.table tbody {
+    display: block;
+    max-height: 300px; /* Limit height */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.table thead,
+.table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Keep columns aligned */
+}
+
+.table tbody tr:hover {
+    background-color: #444;
+}
